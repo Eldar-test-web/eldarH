@@ -49,7 +49,7 @@
 }
 
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;text-size-adjust:100%}
 html:focus-within{scroll-behavior:smooth}
 body{
   margin:0;
@@ -66,6 +66,7 @@ body{
 ::selection{background:var(--copper);color:#FFF8EA}
 img{display:block;max-width:100%}
 a{color:inherit}
+.fact-table dd,.contact-rows a span:last-child,.foot-grid a{overflow-wrap:anywhere}
 
 /* skip link */
 .skip{
@@ -451,6 +452,15 @@ section[id]{scroll-margin-top:84px}
   body{font-size:15px}
   .head-clock{display:none}
   .brand-sub{display:none}
+  .head-in{gap:12px}
+  .head-meta{gap:10px}
+  .h-display{font-size:clamp(2.05rem,10vw,2.9rem)}
+  .hero-work .h-display{font-size:clamp(2.05rem,10vw,2.9rem)}
+  .h2{font-size:clamp(1.7rem,8vw,2.2rem)}
+  .giant{font-size:clamp(3.2rem,17vw,4rem)}
+  .case-no{font-size:2.9rem}
+  .case-top{grid-template-columns:1fr;gap:10px}
+  .case-top .kind{text-align:left}
   .spec-strip{grid-template-columns:1fr 1fr}
   .spec-strip div:nth-child(3){border-left:0}
   .spec-strip div{border-top:1px solid var(--line-soft)}
@@ -460,12 +470,31 @@ section[id]{scroll-margin-top:84px}
   .log-row{grid-template-columns:1fr auto;gap:6px}
   .log-row .c{display:none}
   .case-grid{grid-template-columns:1fr}
+  .field .tools{white-space:normal}
+  .contact-rows a{flex-wrap:wrap;row-gap:4px}
+  .hscroll-ctrl{flex-wrap:wrap}
+  .hscroll-ctrl button{padding:12px 22px}
   .interlude .img-reveal{min-height:240px}
+  .interlude blockquote{grid-template-columns:1fr;gap:8px}
   .foot-grid{grid-template-columns:1fr}
   .foot-bottom{flex-direction:column}
   .case-full .img-reveal{min-height:220px}
   .hscroll{grid-auto-columns:minmax(240px,82%)}
-  .nav a{padding:7px 11px}
+  .nav a{padding:10px 13px}
+  .wipe-inner{flex-wrap:wrap;justify-content:center;text-align:center;padding:0 24px}
+}
+@media (max-width:380px){
+  .head-in{gap:10px}
+  .nav a{padding:9px 11px}
+  .nav a b{display:none}
+  .hero-meta{grid-template-columns:1fr}
+  .hero-meta div + div{border-left:0;border-top:1px solid var(--line)}
+  .spec-strip{grid-template-columns:1fr}
+  .spec-strip div{border-left:0;border-top:1px solid var(--line-soft)}
+  .spec-strip div:first-child{border-top:0}
+  .tech-strip{grid-template-columns:1fr}
+  .tech-strip div{border-left:0;border-top:1px solid var(--line-soft)}
+  .tech-strip div:first-child{border-top:0}
 }
 
 /* reduced motion */

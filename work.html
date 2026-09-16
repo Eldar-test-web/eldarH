@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ELDAR — The Work / Archive | Projects, Prototypes, Notes</title>
+  <meta name="description" content="The work archive: WakeWell, K.O.R.A., AquaFly, robotics systems, security lab notes, CAD and electronics prototypes. Case studies with process, not promises.">
+  <meta name="theme-color" content="#16130F">
+  <link rel="canonical" href="https://eldar-archive.dev/work.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ELDAR — The Work / Archive">
+  <meta property="og:description" content="Ideas → experimentation → engineering → making. Six case studies from the bench.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23EFE9DB'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='700' font-size='32' fill='%23171310' text-anchor='middle'%3EE%3C/text%3E%3Crect x='14' y='48' width='36' height='3' fill='%239C6633'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="progress" aria-hidden="true"><span data-progress></span></div>
+  <div class="wipe" data-wipe aria-hidden="true">
+    <div class="wipe-inner"><span data-wipe-label>ARCHIVE</span><i>— 2026</i></div>
+  </div>
+
+  <header class="site-head">
+    <div class="head-in">
+      <a class="brand" href="index.html" data-transition data-label="01 — ABOUT" aria-label="Eldar — about">
+        <span class="brand-mark">ELDAR<sup>ARC.01</sup></span>
+        <span class="brand-sub">Bench / Notes / Machines</span>
+      </a>
+      <div class="head-meta">
+        <span class="head-clock" data-clock>LOCAL --:--</span>
+        <nav class="nav" aria-label="Primary">
+          <a href="index.html" data-transition data-label="01 — ABOUT"><b>01</b>About</a>
+          <a href="work.html" aria-current="page"><b>02</b>Work</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero-work wrap" aria-labelledby="work-title">
+      <p class="kicker reveal"><span class="n">02</span> The work — archive / ongoing</p>
+      <h1 id="work-title" class="h-display lines" aria-label="Ideas, tested in metal.">
+        <span class="line"><span>Ideas, tested</span></span>
+        <span class="line"><span>in <em>metal.</em></span></span>
+      </h1>
+      <div class="archive-meta reveal">
+        <span>Entries <b>006</b></span><span>Status <b>Prototypes &amp; notes</b></span>
+        <span>Rule <b>No invented specs — gaps are labelled</b></span><span>Rev <b>1.0 / <span data-year>2026</span></b></span>
+      </div>
+      <nav class="index-table reveal" aria-label="Archive index">
+        <a href="#wakewell"><span class="mono">P.01</span><span class="t">WakeWell — sleep / alarm wearable</span><span class="mono hide-m">Embedded · Product</span><span class="mono hide-m">Ongoing</span><span class="mono hide-m">Fig. 03–04</span><span class="go">↓</span></a>
+        <a href="#kora"><span class="mono">P.02</span><span class="t">K.O.R.A. — personal assistant</span><span class="mono hide-m">Software · AI</span><span class="mono hide-m">Notes</span><span class="mono hide-m">Term. 01</span><span class="go">↓</span></a>
+        <a href="#aquafly"><span class="mono">P.03</span><span class="t">AquaFly — rescue drone study</span><span class="mono hide-m">Aero · Mech</span><span class="mono hide-m">Concept</span><span class="mono hide-m">Strip 03</span><span class="go">↓</span></a>
+        <a href="#robotics"><span class="mono">P.04</span><span class="t">Robotics systems</span><span class="mono hide-m">Chassis · Control</span><span class="mono hide-m">Ongoing</span><span class="mono hide-m">Seq. 04</span><span class="go">↓</span></a>
+        <a href="#security"><span class="mono">P.05</span><span class="t">Security lab</span><span class="mono hide-m">Networks · Linux</span><span class="mono hide-m">Lab only</span><span class="mono hide-m">Notes</span><span class="go">↓</span></a>
+        <a href="#cad"><span class="mono">P.06</span><span class="t">CAD / electronics shelf</span><span class="mono hide-m">Parts · Boards</span><span class="mono hide-m">Mixed</span><span class="mono hide-m">Fig. 09</span><span class="go">↓</span></a>
+      </nav>
+    </section>
+
+    <!-- P.01 WAKEWELL — full-bleed case -->
+    <section class="case case-full wrap" id="wakewell" aria-labelledby="wakewell-t">
+      <div class="case-top reveal">
+        <span class="case-no">01</span>
+        <h2 id="wakewell-t">WakeWell<br><span style="color:#A79C87;font-weight:400">A calmer way to wake.</span></h2>
+        <p class="kind">Wearable · Embedded<b>Status — prototype v3 / ongoing</b></p>
+      </div>
+      <div class="tech-strip reveal" aria-label="WakeWell facts">
+        <div>Domain<b>Sleep · Alarm · Haptics</b></div>
+        <div>Stack<b>ESP32 · IMU · BLE (planned)</b></div>
+        <div>Made of<b>PETG · Silicone (test) · PCB</b></div>
+        <div>Year<b>2025 — ongoing</b></div>
+      </div>
+      <figure class="reveal" style="margin:0">
+        <div class="img-reveal">
+          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2000&auto=format&fit=crop"
+               alt="Macro photograph of a circuit board with traces and components" loading="lazy" decoding="async">
+        </div>
+        <figcaption class="caption"><span><b>FIG.03</b> — Board study: routing before shrinking. Reference photo, own board to attach.</span><span>1:1 — notes</span></figcaption>
+      </figure>
+      <div class="case-grid">
+        <div class="reveal">
+          <h3>Problem</h3>
+          <p>Phone alarms wake with sound and light shock. For shared rooms and early training hours, that cost is paid by everyone. The question: can a small wrist device wake one person, gently, and know whether they actually got up?</p>
+          <h3>Idea</h3>
+          <p>A wrist-worn unit that reads motion and sleep-phase hints, then wakes with a staged haptic pattern instead of a buzzer. No cloud, no account — the logic lives on the device.</p>
+          <div class="dim mono">Housing v3 — clearance 0.3 mm, print: PETG · Dimensions &amp; BOM — [to attach]</div>
+        </div>
+        <div class="reveal reveal-d1">
+          <h3>Design &amp; process</h3>
+          <p>Foam models first for wrist feel, then three housing prints (v1 too tight, v2 warped, v3 seats). Firmware logs actigraphy to serial; thresholds tuned from own nights, not from a dataset I don&rsquo;t have.</p>
+          <h3>Result / learned</h3>
+          <p>V3 is wearable and wakes — staging still coarse. Learned: power budget dominates everything (deep-sleep regulator under test), and comfort is a dimension like any other: measure it.</p>
+          <p class="ph">PLACEHOLDER — attach: housing photo v3 · current-draw table · sleep-log excerpt (own data only).</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- P.02 KORA — split editorial -->
+    <section class="case wrap" id="kora" aria-labelledby="kora-t">
+      <div class="case-split">
+        <div class="sticky">
+          <div class="case-top reveal" style="margin-bottom:12px">
+            <span class="case-no">02</span>
+            <p class="kind" style="text-align:left">Software · Local AI<b>Three commands work · rest is notes</b></p>
+          </div>
+          <p class="giant reveal">K.O.R.A<span>.</span></p>
+          <h2 id="kora-t" class="reveal" style="font-family:var(--font-display);font-size:1.5rem;letter-spacing:-.02em;margin:0 0 12px">A personal assistant that stays in the room.</h2>
+          <p class="reveal muted" style="font-size:15px;max-width:44ch">No server, no demo voice. A small offline helper: timers, bench conversions, log dictation, and waking the right script at the right hour.</p>
+          <div class="term reveal">
+            <div class="term-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+<pre><span class="c"># kora — local session, excerpt</span>
+<span class="g">eldar@bench</span><span class="w">:~$ kora log "housing v3 seats, 0.3mm"</span>
+<span class="c">→</span> logged 2026-08-30 23:12 · tag MECH/04
+<span class="g">eldar@bench</span><span class="w">:~$ kora timer 25m --label solder</span>
+<span class="c">→</span> timer set. no network touched.
+<span class="c"># intents: 003 reliable · 007 drafted · latency: [to measure]</span></pre>
+          </div>
+        </div>
+        <div>
+          <figure class="reveal" style="margin:0">
+            <div class="img-reveal">
+              <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=1400&auto=format&fit=crop"
+                   alt="White humanoid robot head in profile against a light background" loading="lazy" decoding="async">
+            </div>
+            <figcaption class="caption"><span><b>FIG.05</b> — Reference: machine face, human patience. K.O.R.A. has no face — by choice.</span><span>Stock ref.</span></figcaption>
+          </figure>
+          <div class="case-grid" style="grid-template-columns:1fr 1fr">
+            <div class="reveal"><h3>Problem → idea</h3><p>Cloud assistants leak context and die offline. The bench needs the opposite: a tool that knows five project folders and nothing about the internet.</p></div>
+            <div class="reveal"><h3>Design → learned</h3><p>Keyword intents + local scripts first; model later, only where it earns its latency. Learned: three reliable commands beat thirty theatrical ones.</p></div>
+          </div>
+          <div class="tech-strip reveal" style="margin-top:22px">
+            <div>Runtime<b>Python · Local only</b></div>
+            <div>Input<b>Text · (voice drafted)</b></div>
+            <div>Store<b>Markdown log · SQLite (test)</b></div>
+            <div>Specs<b>[to measure — no claims]</b></div>
+          </div>
+          <p class="ph reveal">PLACEHOLDER — attach: intent list · repo snapshot · latency table when measured.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- P.03 AQUAFLY — horizontal strip -->
+    <section class="case wrap" id="aquafly" aria-labelledby="aquafly-t" data-hwrap>
+      <div class="case-top reveal">
+        <span class="case-no">03</span>
+        <h2 id="aquafly-t">AquaFly — a rescue-drone study.</h2>
+        <p class="kind">Aero · Hull · Concept<b>Float test 01 done · numbers open</b></p>
+      </div>
+      <p class="reveal muted" style="max-width:70ch;margin:0 0 20px">Premise, kept small: a light VTOL sketch that can sit on water, carry a line or a small float, and survive being handled by cold hands. This is a study, not a product — hull first, rotors later.</p>
+      <div class="hscroll reveal" data-hscroll tabindex="0" aria-label="AquaFly study images, scroll horizontally">
+        <figure>
+          <div class="img-reveal"><img src="https://images.unsplash.com/photo-1473968512647-3e447244af8f?q=80&w=1400&auto=format&fit=crop" alt="Small drone in flight against a cloudy sky" loading="lazy" decoding="async"></div>
+          <figcaption><b style="color:#C39A6B;font-weight:400">S.01</b> — Flight reference. Own airframe: not yet flown.</figcaption>
+        </figure>
+        <figure>
+          <div class="img-reveal"><img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?q=80&w=1400&auto=format&fit=crop" alt="Electronics and microcontroller parts on a desk" loading="lazy" decoding="async"></div>
+          <figcaption><b style="color:#C39A6B;font-weight:400">S.02</b> — Avionics pile: power, link, buoyancy budget.</figcaption>
+        </figure>
+        <figure>
+          <div class="img-reveal"><img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1400&auto=format&fit=crop" alt="Engineer reviewing data on a laptop in a lab" loading="lazy" decoding="async"></div>
+          <figcaption><b style="color:#C39A6B;font-weight:400">S.03</b> — Basin test 01: hull sat 8 mm low. Foam entry to remeasure.</figcaption>
+        </figure>
+      </div>
+      <div class="hscroll-ctrl reveal">
+        <button type="button" data-hprev>← Prev</button>
+        <button type="button" data-hnext>Next →</button>
+        <span class="mono muted" style="font-size:11px;letter-spacing:.14em;align-self:center;margin-left:8px">DRAG / SCROLL — 003 FRAMES</span>
+      </div>
+      <div class="case-grid">
+        <div class="reveal"><h3>Process</h3><p>Paper sketches → foam hull → basin float. Weight log per gram; every gram argued for. Rotor sizing stays on paper until the hull floats right.</p></div>
+        <div class="reveal"><h3>Open items</h3><p class="ph">Weight table · thrust estimate · water-test photos — [to attach]. No range / payload claims until measured.</p></div>
+      </div>
+    </section>
+
+    <!-- P.04 ROBOTICS — stacked -->
+    <section class="case wrap" id="robotics" aria-labelledby="robotics-t">
+      <div class="case-stack">
+        <div>
+          <div class="case-top reveal" style="grid-template-columns:1fr;margin-bottom:14px">
+            <span class="case-no">04</span>
+            <h2 id="robotics-t" style="margin-top:10px">Robotics systems. Chassis that survive the floor.</h2>
+          </div>
+          <p class="reveal muted" style="font-size:15px">Differential-drive base, sensor ring, and the unglamorous part: cable routing that doesn&rsquo;t snag, battery access without tools, code that logs why it stopped.</p>
+          <div class="tech-strip reveal" style="grid-template-columns:1fr 1fr;margin-top:20px">
+            <div>Drive<b>DC · Encoders (test)</b></div>
+            <div>Brain<b>ESP32 · ROS notes</b></div>
+          </div>
+          <div class="reveal"><h3 class="mono" style="font-size:11px;letter-spacing:.22em;color:#C39A6B;font-weight:400">LEARNED</h3>
+          <p style="color:#D9D1BE;font-size:15px">Odometry lies politely; the tape measure doesn&rsquo;t. Calibrate on the actual floor, with the actual battery weight, or don&rsquo;t claim numbers at all.</p></div>
+        </div>
+        <div class="stack-imgs">
+          <figure class="reveal" style="margin:0">
+            <div class="img-reveal"><img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1400&auto=format&fit=crop" alt="Robotic hand reaching toward a human hand" loading="lazy" decoding="async"></div>
+            <figcaption class="caption"><span><b>SEQ.04-A</b> — Actuation study, reference</span><span>Grip: [to test]</span></figcaption>
+          </figure>
+          <figure class="reveal" style="margin:0">
+            <div class="img-reveal"><img src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?q=80&w=1400&auto=format&fit=crop" alt="Mechanical gears meshed together in macro" loading="lazy" decoding="async"></div>
+            <figcaption class="caption"><span><b>SEQ.04-B</b> — Transmission thinking: ratio before code</span><span>Steel / brass</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- P.05 SECURITY -->
+    <section class="case wrap" id="security" aria-labelledby="sec-t">
+      <div class="case-top reveal">
+        <span class="case-no">05</span>
+        <h2 id="sec-t">Security lab. Quiet, local, documented.</h2>
+        <p class="kind">Networks · Linux · Habits<b>Home lab only — no live targets</b></p>
+      </div>
+      <div class="lab reveal">
+        <div>
+          <h3>What the lab covers</h3>
+          <ol>
+            <li>Segmented home network sketch — what talks to what, and why.</li>
+            <li>Linux permissions &amp; SSH habits; keys, not passwords, where it matters.</li>
+            <li>Firmware hygiene for own devices: signed notes, update path, rollback thought.</li>
+            <li>Packet reading basics — understanding own traffic before judging others&rsquo;.</li>
+          </ol>
+        </div>
+        <div>
+          <h3>Method &amp; boundary</h3>
+          <ol>
+            <li>Local VMs and own hardware only. Everything reproducible from notes.</li>
+            <li>Findings written as checklists, not trophies.</li>
+            <li>No scanning, testing, or &ldquo;experiments&rdquo; on systems I don&rsquo;t own. Ever.</li>
+          </ol>
+          <p class="safe"><i></i> Boundary respected — lab-contained by design</p>
+        </div>
+      </div>
+      <figure class="reveal" style="margin:22px 0 0">
+        <div class="img-reveal" style="aspect-ratio:21/8;min-height:220px">
+          <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=2000&auto=format&fit=crop"
+               alt="Dim laboratory interior with equipment lights out of focus" loading="lazy" decoding="async">
+        </div>
+        <figcaption class="caption"><span><b>FIG.08</b> — Night lab. Most learning happens after the log says &ldquo;done&rdquo;.</span><span>Local only</span></figcaption>
+      </figure>
+    </section>
+
+    <!-- P.06 CAD / ELECTRONICS -->
+    <section class="case wrap" id="cad" aria-labelledby="cad-t">
+      <div class="case-cad">
+        <div>
+          <div class="case-top reveal" style="margin-bottom:14px">
+            <span class="case-no">06</span>
+            <p class="kind" style="text-align:left">Parts · Boards · Shelf<b>Mixed — kept, failed, reprinted</b></p>
+          </div>
+          <p class="oversize reveal">The shelf of <span>almosts</span> that taught the most.</p>
+          <p class="reveal muted" style="font-size:15px;max-width:56ch">Brackets, standoffs, sensor mounts, a perfboard that works but offends the eye. Each kept with a tag: what it is, why it failed or survived, what replaced it.</p>
+          <div class="mat-chips reveal" aria-label="Materials and tools">
+            <span>PETG / PLA</span><span>Aluminium 2 mm</span><span>M3 · Brass inserts</span><span>KiCad</span><span>Calipers 0.05</span><span>Ender-class FDM</span>
+          </div>
+          <p class="ph reveal" style="margin-top:18px">PLACEHOLDER — attach: 3 shelf photos with tags · one dimensioned drawing (PDF) · print-profile notes.</p>
+        </div>
+        <figure class="reveal" style="margin:0">
+          <div class="img-reveal"><img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=1400&auto=format&fit=crop" alt="Heavy industrial machine in a workshop" loading="lazy" decoding="async"></div>
+          <figcaption class="caption"><span><b>FIG.09</b> — Machines I learn from before I can afford time on them.</span><span>Study ref.</span></figcaption>
+        </figure>
+      </div>
+
+      <div class="contact-band reveal" aria-labelledby="contact-t">
+        <div>
+          <p class="kicker"><span class="n">—</span> Contact / next</p>
+          <h2 id="contact-t">Everything else is on the bench.</h2>
+          <p>Drawings, logs, and boards are shared on request — with the messy pages included. If you run a lab, a team, or a harder problem, write simply: what it is, what you need built.</p>
+        </div>
+        <div class="contact-rows">
+          <a href="index.html" data-transition data-label="01 — ABOUT"><span>01 / Person</span><span>About Eldar →</span></a>
+          <a href="#main"><span>02 / Top</span><span>Back to index ↑</span></a>
+          <a href="mailto:hello@eldar-archive.dev"><span>Email</span><span>hello@eldar-archive.dev ✳ placeholder</span></a>
+          <a href="https://github.com/" target="_blank" rel="noopener"><span>GitHub</span><span>Link to attach ↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div><h4>Eldar — Arc.01</h4><p class="muted" style="margin:0;max-width:34ch">Archive of prototypes and notes. Photographs are working references; own build photos replace them as entries mature.</p></div>
+        <div><h4>Pages</h4><p style="margin:0"><a href="index.html" data-transition data-label="01 — ABOUT">01 — About</a><br><a href="work.html" aria-current="page">02 — Work archive</a></p></div>
+        <div><h4>Entries</h4><p class="muted" style="margin:0">P.01 WakeWell · P.02 K.O.R.A.<br>P.03 AquaFly · P.04–06 Shelf</p></div>
+        <div><h4>Colophon</h4><p class="muted" style="margin:0">Dark bench theme. No frameworks.<br>Reduced-motion respected.</p></div>
+      </div>
+      <div class="foot-bottom"><span>© <span data-year>2026</span> Eldar — Vol.01</span><span>Archive · Rev. 1.0</span></div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eldar Hamidov — The Work / Archive | Projects, Results, Notes</title>
-  <meta name="description" content="Eldar Hamidov's work archive: WakeWell, K.O.R.A., AquaFly, robotics systems, security lab, prototypes — plus the competition record: NJCO, WRO, RoboCross, AI Olympiad, AIRO.">
+  <title>ELDAR — The Work / Archive | Projects, Prototypes, Notes</title>
+  <meta name="description" content="The work archive: WakeWell, K.O.R.A., AquaFly, robotics systems, security lab notes, CAD and electronics prototypes. Case studies with process, not promises.">
   <meta name="theme-color" content="#16130F">
-  <link rel="canonical" href="https://eldar-test-web.github.io/eldarH/work.html">
+  <link rel="canonical" href="https://eldar-archive.dev/work.html">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Eldar Hamidov — The Work / Archive">
+  <meta property="og:title" content="ELDAR — The Work / Archive">
   <meta property="og:description" content="Ideas → experimentation → engineering → making. Six case studies from the bench.">
   <meta property="og:image" content="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop">
   <meta name="twitter:card" content="summary_large_image">
@@ -27,7 +27,7 @@
 
   <header class="site-head">
     <div class="head-in">
-      <a class="brand" href="./" data-transition data-label="01 — ABOUT">
+      <a class="brand" href="./" data-transition data-label="01 — ABOUT" aria-label="Eldar — home">
         <span class="brand-mark">ELDAR</span>
         <span class="brand-sub">Arc.01 — Bench / Notes / Machines</span>
       </a>
@@ -44,13 +44,13 @@
   <main id="main">
     <section class="hero-work wrap" aria-labelledby="work-title">
       <p class="kicker reveal"><span class="n">02</span> The work — archive / ongoing</p>
-      <h1 id="work-title" class="h-display lines">
+      <h1 id="work-title" class="h-display lines" aria-label="Ideas, tested in metal.">
         <span class="line"><span>Ideas, tested</span></span>
         <span class="line"><span>in <em>metal.</em></span></span>
       </h1>
       <div class="archive-meta reveal">
-        <span>Cases <b>006</b></span><span>Honors <b>014 · record below</b></span>
-        <span>Rule <b>No invented specs — gaps are labelled</b></span><span>Rev <b>1.1 / <span data-year>2026</span></b></span>
+        <span>Entries <b>006</b></span><span>Status <b>Prototypes &amp; notes</b></span>
+        <span>Rule <b>No invented specs — gaps are labelled</b></span><span>Rev <b>1.0 / <span data-year>2026</span></b></span>
       </div>
       <nav class="index-table reveal" aria-label="Archive index">
         <a href="#wakewell"><span class="mono">P.01</span><span class="t">WakeWell — sleep / alarm wearable</span><span class="mono hide-m">Embedded · Product</span><span class="mono hide-m">Ongoing</span><span class="mono hide-m">Fig. 03–04</span><span class="go">↓</span></a>
@@ -59,7 +59,6 @@
         <a href="#robotics"><span class="mono">P.04</span><span class="t">Robotics systems</span><span class="mono hide-m">Chassis · Control</span><span class="mono hide-m">Ongoing</span><span class="mono hide-m">Seq. 04</span><span class="go">↓</span></a>
         <a href="#security"><span class="mono">P.05</span><span class="t">Security lab</span><span class="mono hide-m">Networks · Linux</span><span class="mono hide-m">Lab only</span><span class="mono hide-m">Notes</span><span class="go">↓</span></a>
         <a href="#cad"><span class="mono">P.06</span><span class="t">CAD / electronics shelf</span><span class="mono hide-m">Parts · Boards</span><span class="mono hide-m">Mixed</span><span class="mono hide-m">Fig. 09</span><span class="go">↓</span></a>
-        <a href="#record"><span class="mono">R.00</span><span class="t">Record — selected results</span><span class="mono hide-m">Honors · 2020–2026</span><span class="mono hide-m">014 entries</span><span class="mono hide-m">Table 01</span><span class="go">↓</span></a>
       </nav>
     </section>
 
@@ -70,12 +69,12 @@
         <h2 id="wakewell-t">WakeWell<br><span style="color:#A79C87;font-weight:400">A calmer way to wake.</span></h2>
         <p class="kind">Wearable · Embedded<b>Status — prototype v3 / ongoing</b></p>
       </div>
-      <dl class="tech-strip reveal">
-        <div><dt>Domain</dt><dd>Sleep · Alarm · Haptics</dd></div>
-        <div><dt>Stack</dt><dd>ESP32 · IMU · BLE (planned)</dd></div>
-        <div><dt>Made of</dt><dd>PETG · Silicone (test) · PCB</dd></div>
-        <div><dt>Year</dt><dd>2025 — ongoing</dd></div>
-      </dl>
+      <div class="tech-strip reveal" aria-label="WakeWell facts">
+        <div>Domain<b>Sleep · Alarm · Haptics</b></div>
+        <div>Stack<b>ESP32 · IMU · BLE (planned)</b></div>
+        <div>Made of<b>PETG · Silicone (test) · PCB</b></div>
+        <div>Year<b>2025 — ongoing</b></div>
+      </div>
       <figure class="reveal" style="margin:0">
         <div class="img-reveal">
           <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2000&auto=format&fit=crop"
@@ -131,15 +130,15 @@
             <figcaption class="caption"><span><b>FIG.05</b> — Reference: machine face, human patience. K.O.R.A. has no face — by choice.</span><span>Stock ref.</span></figcaption>
           </figure>
           <div class="case-grid" style="grid-template-columns:1fr 1fr">
-            <div class="reveal"><h3>Problem → idea</h3><p>Cloud assistants leak context and die offline. The bench needs the opposite: a tool that knows five project folders and nothing about the internet. First notes come from the International Inter-School AI Olympiad (honor roll, 2025).</p></div>
+            <div class="reveal"><h3>Problem → idea</h3><p>Cloud assistants leak context and die offline. The bench needs the opposite: a tool that knows five project folders and nothing about the internet.</p></div>
             <div class="reveal"><h3>Design → learned</h3><p>Keyword intents + local scripts first; model later, only where it earns its latency. Learned: three reliable commands beat thirty theatrical ones.</p></div>
           </div>
-          <dl class="tech-strip reveal" style="margin-top:22px">
-            <div><dt>Runtime</dt><dd>Python · Local only</dd></div>
-            <div><dt>Input</dt><dd>Text · (voice drafted)</dd></div>
-            <div><dt>Store</dt><dd>Markdown log · SQLite (test)</dd></div>
-            <div><dt>Specs</dt><dd>[to measure — no claims]</dd></div>
-          </dl>
+          <div class="tech-strip reveal" style="margin-top:22px">
+            <div>Runtime<b>Python · Local only</b></div>
+            <div>Input<b>Text · (voice drafted)</b></div>
+            <div>Store<b>Markdown log · SQLite (test)</b></div>
+            <div>Specs<b>[to measure — no claims]</b></div>
+          </div>
           <p class="ph reveal">PLACEHOLDER — attach: intent list · repo snapshot · latency table when measured.</p>
         </div>
       </div>
@@ -153,7 +152,7 @@
         <p class="kind">Aero · Hull · Concept<b>Float test 01 done · numbers open</b></p>
       </div>
       <p class="reveal muted" style="max-width:70ch;margin:0 0 20px">Premise, kept small: a light VTOL sketch that can sit on water, carry a line or a small float, and survive being handled by cold hands. This is a study, not a product — hull first, rotors later.</p>
-      <div class="hscroll reveal" data-hscroll tabindex="0" role="group" aria-label="AquaFly study images, scroll horizontally">
+      <div class="hscroll reveal" data-hscroll tabindex="0" aria-label="AquaFly study images, scroll horizontally">
         <figure>
           <div class="img-reveal"><img src="https://images.unsplash.com/photo-1473968512647-3e447244af8f?q=80&w=1400&auto=format&fit=crop" alt="Small drone in flight against a cloudy sky" loading="lazy" decoding="async"></div>
           <figcaption><b style="color:#C39A6B;font-weight:400">S.01</b> — Flight reference. Own airframe: not yet flown.</figcaption>
@@ -186,11 +185,11 @@
             <span class="case-no">04</span>
             <h2 id="robotics-t" style="margin-top:10px">Robotics systems. Chassis that survive the floor.</h2>
           </div>
-          <p class="reveal muted" style="font-size:15px">Differential-drive base, sensor ring, and the unglamorous part: cable routing that doesn&rsquo;t snag, battery access without tools, code that logs why it stopped. Raced with SUMracers — RoboCross II worldwide, WRO Azerbaijan finalist ’24, AIRO II ’26.</p>
-          <dl class="tech-strip reveal" style="grid-template-columns:1fr 1fr;margin-top:20px">
-            <div><dt>Drive</dt><dd>DC · Encoders (test)</dd></div>
-            <div><dt>Brain</dt><dd>ESP32 · Arduino</dd></div>
-          </dl>
+          <p class="reveal muted" style="font-size:15px">Differential-drive base, sensor ring, and the unglamorous part: cable routing that doesn&rsquo;t snag, battery access without tools, code that logs why it stopped.</p>
+          <div class="tech-strip reveal" style="grid-template-columns:1fr 1fr;margin-top:20px">
+            <div>Drive<b>DC · Encoders (test)</b></div>
+            <div>Brain<b>ESP32 · ROS notes</b></div>
+          </div>
           <div class="reveal"><h3 class="mono" style="font-size:12px;letter-spacing:.22em;color:#C39A6B;font-weight:400">LEARNED</h3>
           <p style="color:#D9D1BE;font-size:15px">Odometry lies politely; the tape measure doesn&rsquo;t. Calibrate on the actual floor, with the actual battery weight, or don&rsquo;t claim numbers at all.</p></div>
         </div>
@@ -212,7 +211,7 @@
       <div class="case-top reveal">
         <span class="case-no">05</span>
         <h2 id="sec-t">Security lab. Quiet, local, documented.</h2>
-        <p class="kind">Networks · Linux · Habits<b>NJCO II ’25 · AKTA CSS — lab only</b></p>
+        <p class="kind">Networks · Linux · Habits<b>Home lab only — no live targets</b></p>
       </div>
       <div class="lab reveal">
         <div>
@@ -221,7 +220,7 @@
             <li>Segmented home network sketch — what talks to what, and why.</li>
             <li>Linux permissions &amp; SSH habits; keys, not passwords, where it matters.</li>
             <li>Firmware hygiene for own devices: signed notes, update path, rollback thought.</li>
-            <li>NJCO &amp; AKTA checklists — networks, OSINT basics, wire analysis, all lab-contained.</li>
+            <li>Packet reading basics — understanding own traffic before judging others&rsquo;.</li>
           </ol>
         </div>
         <div>
@@ -252,10 +251,10 @@
             <p class="kind" style="text-align:left">Parts · Boards · Shelf<b>Mixed — kept, failed, reprinted</b></p>
           </div>
           <h2 class="oversize reveal" id="cad-t">The shelf of <span>almosts</span> that taught the most.</h2>
-          <p class="reveal muted" style="font-size:15px;max-width:56ch">Brackets, standoffs, sensor mounts, a perfboard that works but offends the eye — most of them printed on the Anycubic Kobra 2 Pro. Each kept with a tag: what it is, why it failed or survived, what replaced it.</p>
-          <ul class="mat-chips reveal">
-            <li>Anycubic Kobra 2 Pro</li><li>PETG / PLA</li><li>M3 · Brass inserts</li><li>Fusion 360</li><li>FreeCAD</li><li>Calipers 0.05</li>
-          </ul>
+          <p class="reveal muted" style="font-size:15px;max-width:56ch">Brackets, standoffs, sensor mounts, a perfboard that works but offends the eye. Each kept with a tag: what it is, why it failed or survived, what replaced it.</p>
+          <div class="mat-chips reveal" aria-label="Materials and tools">
+            <span>PETG / PLA</span><span>Aluminium 2 mm</span><span>M3 · Brass inserts</span><span>KiCad</span><span>Calipers 0.05</span><span>Ender-class FDM</span>
+          </div>
           <p class="ph reveal" style="margin-top:18px">PLACEHOLDER — attach: 3 shelf photos with tags · one dimensioned drawing (PDF) · print-profile notes.</p>
         </div>
         <figure class="reveal" style="margin:0">
@@ -264,7 +263,7 @@
         </figure>
       </div>
 
-      <section class="contact-band reveal" aria-labelledby="contact-t">
+      <div class="contact-band reveal" aria-labelledby="contact-t">
         <div>
           <p class="kicker"><span class="n">—</span> Contact / next</p>
           <h2 id="contact-t">Everything else is on the bench.</h2>
@@ -272,51 +271,23 @@
         </div>
         <div class="contact-rows">
           <a href="index.html" data-transition data-label="01 — ABOUT"><span>01 / Person</span><span>About Eldar →</span></a>
-          <a href="mailto:eldarhamidov2009@gmail.com"><span>Email</span><span>eldarhamidov2009@gmail.com</span></a>
-          <a href="https://github.com/Eldar-005" target="_blank" rel="noopener"><span>GitHub</span><span>Eldar-005 ↗</span></a>
-          <a href="https://www.youtube.com/@EldarBuildLab" target="_blank" rel="noopener"><span>YouTube</span><span>Eldar Build Lab ↗</span></a>
+          <a href="#main"><span>02 / Top</span><span>Back to index ↑</span></a>
+          <a href="mailto:hello@eldar-archive.dev"><span>Email</span><span>hello@eldar-archive.dev ✳ placeholder</span></a>
+          <a href="https://github.com/" target="_blank" rel="noopener"><span>GitHub</span><span>Link to attach ↗</span></a>
         </div>
-      </section>
-    </section>
-    <!-- R.00 RECORD -->
-    <section class="case wrap" id="record" aria-labelledby="record-t" style="padding-bottom:0">
-      <div class="case-top reveal">
-        <span class="case-no">R.0</span>
-        <h2 id="record-t">Record — selected results, 2020–2026.</h2>
-        <p class="kind">Competitions · Honors<b>Every line from the CV — nothing added</b></p>
       </div>
-      <div class="log reveal" role="group" aria-label="Competition record">
-        <div class="log-head"><span>Record — <b>014 / TABLE 01</b></span><span>Vol.01</span></div>
-        <ul class="log-list">
-          <li class="log-row"><span class="d">2026</span><span class="c">II place</span><span>AIRO — Azerbaijan International Robotics Olympiad</span><span class="s ok">Intl</span></li>
-          <li class="log-row"><span class="d">2026</span><span class="c">Volunteer</span><span>Sumgait Youth House · Bir Könüllü — events &amp; peer trainings</span><span class="s ok">Local</span></li>
-          <li class="log-row"><span class="d">2025</span><span class="c">II place</span><span>NJCO — National Junior Cybersecurity Olympiad</span><span class="s ok">National</span></li>
-          <li class="log-row"><span class="d">2025</span><span class="c">I place</span><span>USA International English Olympiad</span><span class="s ok">Intl</span></li>
-          <li class="log-row"><span class="d">2025</span><span class="c">I place</span><span>“Professionallar” — Saint Petersburg</span><span class="s ok">Intl</span></li>
-          <li class="log-row"><span class="d">2025</span><span class="c">Hon. Roll</span><span>International Inter-School AI Olympiad</span><span class="s ok">Intl</span></li>
-          <li class="log-row"><span class="d">2025</span><span class="c">Participant</span><span>AKTA Cyber Summer School</span><span class="s work">National</span></li>
-          <li class="log-row"><span class="d">2024</span><span class="c">Finalist</span><span>WRO Azerbaijan</span><span class="s work">National</span></li>
-          <li class="log-row"><span class="d">2024–25</span><span class="c">Hon. Roll</span><span>Bebras Challenge USA — informatics</span><span class="s ok">Intl</span></li>
-          <li class="log-row"><span class="d">2023</span><span class="c">Winner</span><span>SAF Festival, Innovative Exhibition — earthquake rescue bag</span><span class="s ok">National</span></li>
-          <li class="log-row"><span class="d">2022</span><span class="c">Finalist</span><span>Teknofest Azerbaijan</span><span class="s work">Intl</span></li>
-          <li class="log-row"><span class="d">2021</span><span class="c">V place</span><span>International Robotics Olympiad, Egypt — team SUMracers</span><span class="s ok">Intl</span></li>
-          <li class="log-row"><span class="d">2020</span><span class="c">II worldwide</span><span>RoboCross Online Challenge, Egypt — team</span><span class="s ok">Intl</span></li>
-          <li class="log-row"><span class="d">2020</span><span class="c">Finalist</span><span>WRO Robot Virtual Games, Panama · WRO Canada-X — V place</span><span class="s ok">Intl</span></li>
-        </ul>
-      </div>
-      <p class="reveal muted mono" style="font-size:12px;letter-spacing:.14em;text-transform:uppercase;margin:16px 0 0">Full CV with all finals &amp; participations — on request.</p>
     </section>
   </main>
 
   <footer class="site-foot">
     <div class="wrap">
       <div class="foot-grid">
-        <div><h2 class="foot-h">Eldar Hamidov</h2><p class="muted" style="margin:0;max-width:34ch">Archive of prototypes, results and notes. Sumgait, Azerbaijan. Photographs are working references; own build photos replace them as entries mature.</p></div>
+        <div><h2 class="foot-h">Eldar — Arc.01</h2><p class="muted" style="margin:0;max-width:34ch">Archive of prototypes and notes. Photographs are working references; own build photos replace them as entries mature.</p></div>
         <div><h2 class="foot-h">Pages</h2><p style="margin:0"><a href="index.html" data-transition data-label="01 — ABOUT">01 — About</a><br><a href="work.html" aria-current="page">02 — Work archive</a></p></div>
-        <div><h2 class="foot-h">Elsewhere</h2><p style="margin:0"><a href="https://github.com/Eldar-005" target="_blank" rel="noopener">GitHub — Eldar-005</a><br><a href="https://www.youtube.com/@EldarBuildLab" target="_blank" rel="noopener">YouTube — Build Lab</a><br><a href="https://www.instagram.com/eldar_hamidov09" target="_blank" rel="noopener">Instagram ↗</a></p></div>
+        <div><h2 class="foot-h">Entries</h2><p class="muted" style="margin:0">P.01 WakeWell · P.02 K.O.R.A.<br>P.03 AquaFly · P.04–06 Shelf</p></div>
         <div><h2 class="foot-h">Colophon</h2><p class="muted" style="margin:0">Dark bench theme. No frameworks.<br>Reduced-motion respected.</p></div>
       </div>
-      <div class="foot-bottom"><span>© <span data-year>2026</span> Eldar Hamidov — Vol.01</span><span>Archive · Rev. 1.1</span></div>
+      <div class="foot-bottom"><span>© <span data-year>2026</span> Eldar — Vol.01</span><span>Archive · Rev. 1.0</span></div>
     </div>
   </footer>
 

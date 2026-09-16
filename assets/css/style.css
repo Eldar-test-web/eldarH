@@ -449,14 +449,33 @@ section[id]{scroll-margin-top:84px}
   .lab > div + div{border-left:0;border-top:1px solid var(--line)}
 }
 @media (max-width:640px){
-  body{font-size:15px}
+  body{font-size:17px}
   .head-clock{display:none}
   .brand-sub{display:none}
   .head-in{gap:12px}
   .head-meta{gap:10px}
-  .h-display{font-size:clamp(2.05rem,10vw,2.9rem)}
-  .hero-work .h-display{font-size:clamp(2.05rem,10vw,2.9rem)}
-  .h2{font-size:clamp(1.7rem,8vw,2.2rem)}
+  .h-display{font-size:clamp(2.3rem,10vw,3rem)}
+  .hero-work .h-display{font-size:clamp(2.3rem,10vw,3rem)}
+  .h2{font-size:clamp(1.9rem,8.5vw,2.5rem)}
+  .lede{font-size:1.15rem}
+  .profile-main p{font-size:18px}
+  .block-head .right{font-size:16px}
+  .field h3{font-size:1.4rem}
+  .field p{font-size:16px}
+  .cap h3{font-size:1.45rem}
+  .cap p,.principle p,.timeline p{font-size:16px}
+  .timeline h3{font-size:1.25rem}
+  .fact-table dd{font-size:16px}
+  .pull p{font-size:1.45rem}
+  .interlude blockquote p{font-size:1.35rem}
+  .case-top h2{font-size:clamp(2rem,8vw,2.6rem)}
+  .case-grid p{font-size:16.5px}
+  .lab ol{font-size:16px}
+  .contact-band p{font-size:16px}
+  .contact-rows a{font-size:15px}
+  .index-table .t{font-size:18px}
+  .log-row{font-size:15px}
+  .next .big{font-size:clamp(2.8rem,12vw,4rem)}
   .giant{font-size:clamp(3.2rem,17vw,4rem)}
   .case-no{font-size:2.9rem}
   .case-top{grid-template-columns:1fr;gap:10px}
